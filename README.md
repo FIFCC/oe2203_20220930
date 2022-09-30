@@ -341,5 +341,5 @@ openEuler 22.03 RISC-V 20220926 版本共发现问题 x 个，P1 x 个，P2 x �
 # 7. 附件
 
 1. [RISC-V openEuler 22.03 自动化测试报告](./auto_testing/0926-22.03testing)
-2. [RISC-V openEuler 22.09 自动化测试报告](./auto_testing/0926-22.09testing)
+2. [RISC-V openEuler 22.09 自动化测试报告](./auto_testing/0922-22.09testing)
 
