@@ -3,7 +3,7 @@
 
 注：
 1. root用户密码`openEuler12#$`
-2. openeuler用户密码`openEuler12#$`,默认用户，可用于使用Eclipse
+2. openeuler用户密码`openEuler12#$`,默认用户，可使用Eclipse
 3. 本版本操作系统预装Eclipse软件，Eclispe屏保解锁密码默认是`master`
 
 ### 1. 编译安装支持视频输出的QEMU
