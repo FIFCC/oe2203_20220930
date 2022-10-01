@@ -2,7 +2,10 @@
 
 使用SSD替代micro-sd作为启动存储介质可显著提高系统性能，步骤参考[从NVMe驱动器启动openEuler RISC-V](./ssd.md)
 
-注：本版本操作系统预装Eclipse软件，Eclispe屏保解锁密码默认是`master`
+注：
+1. root用户密码`openEuler12#$`
+2. openeuler用户密码`openEuler12#$`,默认用户，可使用Eclipse
+3. 本版本操作系统预装Eclipse软件，Eclispe屏保解锁密码默认是`master`
 
 ### 1. 准备硬件
 
