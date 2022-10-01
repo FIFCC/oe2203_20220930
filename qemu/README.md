@@ -1,6 +1,8 @@
 
 # 使用QEMU安装RISC-V openEuler
 
+注：本版本操作系统预装Eclipse软件，Eclispe屏保解锁密码默认是`master`
+
 ### 1. 编译安装支持视频输出的QEMU
 
 - 略。详见[通过 QEMU 仿真 RISC-V 环境并启动 OpenEuler RISC-V 系统](https://github.com/openeuler-mirror/RISC-V/blob/master/doc/tutorials/vm-qemu-oErv.md)
