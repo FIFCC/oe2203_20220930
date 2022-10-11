@@ -74,11 +74,11 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 
 - [x] [使用Unmatched开发板安装RISC-V openEuler](./unmatched/README.md)
 
-- [ ] [使用Visionfive开发板安装RISC-V openEuler](./visionfive/README.md)
+- [x] [使用Visionfive开发板安装RISC-V openEuler](./visionfive/README.md)
 
 - [ ] [使用D1开发板安装RISC-V openEuler](./d1/README.md)
 
-openEuler 22.03 RISC-V 20220926 QEMU和Unmatched版本通过测试发布。Visionfive版本不支持WIFI，其它功能和软件安装正常，暂不发布。
+openEuler 22.03 RISC-V 20220926 QEMU和Unmatched，Visionfive版本通过测试发布，
 
 # 5 测试结论
 
@@ -93,14 +93,15 @@ openEuler 22.03 RISC-V 20220926 版本共发现问题 28个，P1 0 个，P2 0 �
 | 序号 | 组件/特性名称 | 特性质量评估 | 备注 |
 | ---- | ----------------------------------------- | :-------------------------: | ---------------------------------------------------------------------------------------------------------------------- |
 | 1 | [支持HiFive Unmatched](./unmatched/测试报告.xlsx) | <font color=green>█</font> | 全栈支持Unmatched开发板 |
-| 2 | [支持xfce桌面](./xfce/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷4个。 |
-| 3 | [支持Chromium浏览器](./chromium/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷3个。 |
-| 4 | [支持Firefox浏览器](./firefox/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常(此版本源包含97和100两个版本Firefox，安装需使用包全名进行安装，即dnf install firefox-97xxxxx)，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷4个。 |
-| 5 | [支持Libreoffice浏览器](./libreoffice/测试报告.xlsx) | <font color=green>█</font> | 安装正常，卸载失败，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷2个。 |
-| 6 | [支持Tunderbird](./tunderbird/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，可以收发邮件。 |
-| 7 | 支持Eclipse | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好。发现功能缺陷2个，eclipse里面，菜单project下面的open project是灰色的，不能使用，不能打开已有project和eclipse无法配置tomcat。发现性能缺陷1个，软件启动慢，在QEMU和unmatched开发板上的启动时间均超过了5分钟。此测试项目为临时添加，暂未提交测试用例报告。 |
-| 8 | [支持VLC](./vlc/测试报告.xlsx) | <font color=blue>▲</font> | 安装和卸载正常，在QEMU和Visionfive无显卡环境下播放mp4视频黑屏，需要手工设置输出格式为X11，unmatched上工作正常，未通过测试，从发行版预装软件中删除。发现缺陷3个。 |
-| 9 | [支持GIMP](./gimp/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好。尚未发现功能缺陷。 |
+| 2 | 支持VisionFive | <font color=green>█</font> | 全栈支持VisionFive开发板, 屏保锁屏不能解锁（本发行版将卸载屏保程序） |
+| 3 | [支持xfce桌面](./xfce/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷4个。  QEMU和VisionFive屏保锁屏不能解锁（本发行版将卸载屏保程序）, unmatched屏保解锁成功|
+| 4 | [支持Chromium浏览器](./chromium/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷3个。 |
+| 5 | [支持Firefox浏览器](./firefox/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常(此版本源包含97和100两个版本Firefox，安装需使用包全名进行安装，即dnf install firefox-97xxxxx)，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷4个。 |
+| 6 | [支持Libreoffice浏览器](./libreoffice/测试报告.xlsx) | <font color=green>█</font> | 安装正常，卸载失败，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷2个。 |
+| 7 | [支持Tunderbird](./tunderbird/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，可以收发邮件。 |
+| 8 | 支持Eclipse | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好。发现功能缺陷2个，eclipse里面，菜单project下面的open project是灰色的，不能使用，不能打开已有project和eclipse无法配置tomcat。发现性能缺陷1个，软件启动慢，在QEMU和unmatched开发板上的启动时间均超过了5分钟。此测试项目为临时添加，暂未提交测试用例报告。 |
+| 9 | [支持VLC](./vlc/测试报告.xlsx) | <font color=blue>▲</font> | 安装和卸载正常，在QEMU和Visionfive无显卡环境下播放mp4视频黑屏，需要手工设置输出格式为X11，unmatched上工作正常，未通过测试，从发行版预装软件中删除。发现缺陷3个。 |
+| 10 | [支持GIMP](./gimp/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好。尚未发现功能缺陷。 |
 
 <font color=red>●</font>： 表示特性不稳定，风险高
 
