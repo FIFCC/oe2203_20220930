@@ -31,8 +31,8 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | 硬件/QEMU | 硬件配置信息 | 测试结果 |
 | ----------------------------------- | ------------------------------------------------------------ | ------------------------- |
 | HiFive Unmatched | CPU: SiFive Freedom U740 SoC <br />内存：16GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 通过 |
-| VisionFive | CPU: JH7100 <br />内存：8GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 部分通过，WIFI不支持 |
-| D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 未通过，引导失败 |
+| VisionFive | CPU: JH7100 <br />内存：8GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 通过 |
+| D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD |  |
 | Qemu 6.2/7.0 | CPU: 8<br />内存：8GB <br />存储设备：文件 | 通过 |
 
 本次版本测试活动策略如下：
@@ -40,8 +40,8 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | **需求**                        | **测试分层策略**                                             |
 | ------------------------------- | ------------------------------------------------------------ |
 | 支持HiFive Unmatched | 对HiFive Unmatched进行安装、基本功能、兼容性及稳定性的测试 |
-| 支持VisionFive | 对VisionFive进行安装、基本功能、兼容性及稳定性的测试, WIFI支持未通过 |
-| 支持D1 | 对D1进行安装、基本功能、兼容性及稳定性的测试, 启动失败，未通过 |
+| 支持VisionFive | 对VisionFive进行安装、基本功能、兼容性及稳定性的测试通过 |
+| 支持D1 |  |
 | 支持常用软件和系统设置功能软件 | 验证常用软件和系统设置功能软件在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Xfce桌面 | 验证Xfce桌面系统在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Chromium软件 | 验证Chromium软件的安装和软件的基本功能 |
@@ -84,7 +84,7 @@ openEuler 22.03 RISC-V 20220926 QEMU和Unmatched版本通过测试发布。Visio
 
 openEuler 22.03 RISC-V 20220926 版本整体测试按照Tarsier团队的计划，共完成了一轮重点特性测试（20220922）+一轮自动化测试（常用软件和系统设置功能）+一轮回归测试+版本发布验收测试（20220926）；其中第一轮测试聚焦在新移植软件的安装和基础功能测试；一轮自动化测试验证交付版本的常用软件和系统设置功能；一轮回归测通过测试第一轮报告的缺陷，验证缺陷的修复和影响程度；版本发布验收测试是在版本正式发布至官网后开展的轻量化验证活动，旨在保证发布件和测试验证过程交付件的一致性。
 
-openEuler 22.03 RISC-V 20220926 版本共发现问题 x 个，P1 x 个，P2 x 个，P3 x 个，P4 x 个，其他问题均已修复，回归测试结果正常。版本整体质量较好。
+openEuler 22.03 RISC-V 20220926 版本共发现问题 28个，P1 0 个，P2 0 个，P3 6 个，P4 八 个，P5 14 个，其他问题均已修复，回归测试结果正常。版本整体质量较好。
 
 ## 5.1 重点组件测试
 
