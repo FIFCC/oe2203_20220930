@@ -41,7 +41,7 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | ------------------------------- | ------------------------------------------------------------ |
 | 支持HiFive Unmatched | 对HiFive Unmatched进行安装、基本功能、兼容性及稳定性的测试 |
 | 支持VisionFive | 对VisionFive进行安装、基本功能、兼容性及稳定性的测试通过 |
-| 支持D1 |启动失败 |
+| 支持D1 |启动失败 [启动log](./d1/d1_log.txt) |
 | 支持常用软件和系统设置功能软件 | 验证常用软件和系统设置功能软件在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Xfce桌面 | 验证Xfce桌面系统在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Chromium软件 | 验证Chromium软件的安装和软件的基本功能 |
