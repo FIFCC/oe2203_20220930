@@ -32,7 +32,7 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | ----------------------------------- | ------------------------------------------------------------ | ------------------------- |
 | HiFive Unmatched | CPU: SiFive Freedom U740 SoC <br />内存：16GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 通过 |
 | VisionFive | CPU: JH7100 <br />内存：8GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 通过 |
-| D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD |  |
+| D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 启动失败 |
 | Qemu 6.2/7.0 | CPU: 8<br />内存：8GB <br />存储设备：文件 | 通过 |
 
 本次版本测试活动策略如下：
@@ -41,7 +41,7 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | ------------------------------- | ------------------------------------------------------------ |
 | 支持HiFive Unmatched | 对HiFive Unmatched进行安装、基本功能、兼容性及稳定性的测试 |
 | 支持VisionFive | 对VisionFive进行安装、基本功能、兼容性及稳定性的测试通过 |
-| 支持D1 |  |
+| 支持D1 |启动失败 |
 | 支持常用软件和系统设置功能软件 | 验证常用软件和系统设置功能软件在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Xfce桌面 | 验证Xfce桌面系统在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Chromium软件 | 验证Chromium软件的安装和软件的基本功能 |
