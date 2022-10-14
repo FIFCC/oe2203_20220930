@@ -35,13 +35,30 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 启动失败 |
 | Qemu 6.2/7.0 | CPU: 8<br />内存：8GB <br />存储设备：文件 | 通过 |
 
-本次版本测试活动策略如下：
+20220926版本测试活动策略如下：
 
 | **需求**                        | **测试分层策略**                                             |
 | ------------------------------- | ------------------------------------------------------------ |
 | 支持HiFive Unmatched | 对HiFive Unmatched进行安装、基本功能、兼容性及稳定性的测试 |
 | 支持VisionFive | 对VisionFive进行安装、基本功能、兼容性及稳定性的测试通过 |
 | 支持D1 |启动失败 [启动log](./d1/d1_log.txt) |
+| 支持常用软件和系统设置功能软件 | 验证常用软件和系统设置功能软件在openEuler RISC-V版本上的可安装和基本功能 |
+| 支持Xfce桌面 | 验证Xfce桌面系统在openEuler RISC-V版本上的可安装和基本功能 |
+| 支持Chromium软件 | 验证Chromium软件的安装和软件的基本功能 |
+| 支持Firefox软件 | 验证Firefox软件的安装和软件的基本功能 |
+| 支持Libreoffice软件 | 验证Libreoffice软件的安装和软件的基本功能 |
+| 支持Tunderbird软件 | 验证Tunderbird软件的安装和软件的基本功能 |
+| 支持Eclipse软件 | 验证Eclipse软件的安装和软件的基本功能 |
+| 支持VLC软件 | 验证VLC软件的安装和软件的基本功能 |
+| 支持GIMP软件 | 验证GIMP软件的安装和软件的基本功能 |
+
+preview(20221014)版本测试活动策略如下：
+
+| **需求**                        | **测试分层策略**                                             |
+| ------------------------------- | ------------------------------------------------------------ |
+| 支持HiFive Unmatched | 对HiFive Unmatched进行安装、基本功能、兼容性及稳定性的测试 |
+| 支持VisionFive | 对VisionFive进行安装、基本功能、兼容性及稳定性的测试通过 |
+| 支持D1 |对D1进行安装、部分基本功能、兼容性及稳定性的测试通过， 缺陷：WiFi 和蓝牙功能不可用，LibreOffice 启动闪退，修改屏幕分辨率后 xfce 显示可能出现问题，HDMI 接口热插拔可能不可用 |
 | 支持常用软件和系统设置功能软件 | 验证常用软件和系统设置功能软件在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Xfce桌面 | 验证Xfce桌面系统在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Chromium软件 | 验证Chromium软件的安装和软件的基本功能 |
@@ -76,7 +93,7 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 
 - [x] [使用Visionfive开发板安装RISC-V openEuler](./visionfive/README.md)
 
-- [ ] [使用D1开发板安装RISC-V openEuler](./d1/README.md)
+- [x] [使用D1开发板安装RISC-V openEuler](./d1/README.md)
 
 openEuler 22.03 RISC-V 20220926 QEMU和Unmatched，Visionfive版本通过测试发布，
 
@@ -93,7 +110,8 @@ openEuler 22.03 RISC-V 20220926 版本共发现问题 32个，P1 0 个，P2 1 �
 | 序号 | 组件/特性名称 | 特性质量评估 | 备注 |
 | ---- | ----------------------------------------- | :-------------------------: | ---------------------------------------------------------------------------------------------------------------------- |
 | 1 | [支持HiFive Unmatched](./unmatched/测试报告.xlsx) | <font color=green>█</font> | 全栈支持Unmatched开发板 |
-| 2 | 支持VisionFive | <font color=green>█</font> | 全栈支持VisionFive开发板, 屏保锁屏不能解锁（本发行版将卸载屏保程序） |
+| 2 | 支持VisionFive | <font color=green>█</font> | 全栈支持VisionFive开发板 |
+| 2 | 支持D1 | <font color=green>▲</font> | 部分支持D1开发板, 缺陷：WiFi 和蓝牙功能不可用，LibreOffice 启动闪退，修改屏幕分辨率后 xfce 显示可能出现问题，HDMI 接口热插拔可能不可用 |
 | 3 | [支持xfce桌面](./xfce/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷9个。  QEMU和VisionFive屏保锁屏不能解锁（本发行版将卸载屏保程序）, unmatched屏保解锁成功|
 | 4 | [支持Chromium浏览器](./chromium/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷2个。 |
 | 5 | [支持Firefox浏览器](./firefox/测试报告.xlsx) | <font color=green>█</font> | 安装和卸载正常(此版本源包含97和100两个版本Firefox，安装需使用包全名进行安装，即dnf install firefox-97xxxxx)，整体核心功能(重要组件和系统插件)稳定正常，整体质量良好，发现缺陷8个。 |
