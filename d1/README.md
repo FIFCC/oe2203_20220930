@@ -1,5 +1,7 @@
 ## 使用D1 开发板安装openEuler RISC-V 镜像
 
+以下为20220926版本安装文档（启动失败），V1版本（启动成功）安装文档见https://gitee.com/openeuler/RISC-V/blob/master/release/openEuler-22.03/d1/README.md
+
 ### 1. 准备硬件
 
 1）D1开发板：由D1获取得到开发板。
