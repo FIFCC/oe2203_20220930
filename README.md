@@ -16,15 +16,15 @@
 
 openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持RISC-V处理器，能够充分释放计算芯片的潜能，是由全球开源贡献者构建的高效、稳定、安全的开源操作系统。
 
-本文主要描述openEuler 22.03 RISC-V版本的总体测试活动，按照社区开发模式进行运作，结合社区Tarsier团队制定的版本计划规划相应的测试计划及活动。测试报告覆盖新需求、继承需求的测试执行情况和评估，并结合各类专项测试活动和版本问题单总体情况进行整体的说明和质量评估。
+本文主要描述openEuler 22.03-V1 RISC-V 版本的总体测试活动，按照社区开发模式进行运作，结合社区Tarsier团队制定的版本计划规划相应的测试计划及活动。测试报告覆盖新需求、继承需求的测试执行情况和评估，并结合各类专项测试活动和版本问题单总体情况进行整体的说明和质量评估。
 
 # 2   测试版本说明
 
-本文档测试对象是openEuler 22.03 RISC-V 2022年9月26日发布版本，发布范围相较22.03 LTS RISC-V版本主要变动：
+本文档测试对象是openEuler 22.03 RISC-V 2022年9月26日和openEuler 22.03-V1 RISC-V（20221014）发布版本，发布范围相较22.03 LTS RISC-V版本主要变动：
 
 1. 软件包选型升级
 2. 新增软件：Xfce桌面，Chromium浏览器，Firefox浏览器，Libreoffice办公套件，Tunderbird电子邮件客户端，Eclipse，VLC视频播放工具，GIMP图片编辑工具
-3. 新增全栈支持Unmatched开发板，部分支持VisionFive开发板
+3. 新增全栈支持Unmatched开发板，全栈支持VisionFive开发板，部分支持D1开发板
 4. 修复bug和cve
 
 测试环境如下：
@@ -53,7 +53,7 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | 支持VLC软件 | 验证VLC软件的安装和软件的基本功能 |
 | 支持GIMP软件 | 验证GIMP软件的安装和软件的基本功能 |
 
-preview(20221014)版本测试活动策略如下：
+openEuler 22.03-V1(20221014)版本测试活动策略如下：
 
 | **需求**                        | **测试分层策略**                                             |
 | ------------------------------- | ------------------------------------------------------------ |
@@ -64,7 +64,7 @@ preview(20221014)版本测试活动策略如下：
 | 支持Xfce桌面 | 验证Xfce桌面系统在openEuler RISC-V版本上的可安装和基本功能 |
 | 支持Chromium软件 | 验证Chromium软件的安装和软件的基本功能 |
 | 支持Firefox软件 | 验证Firefox软件的安装和软件的基本功能 |
-| 支持Libreoffice软件 | 验证Libreoffice软件的安装和软件的基本功能 |
+| 支持Libreoffice软件 | 验证Libreoffice软件的安装和软件的基本功能，D1启动闪退 |
 | 支持Tunderbird软件 | 验证Tunderbird软件的安装和软件的基本功能 |
 | 支持Eclipse软件 | 验证Eclipse软件的安装和软件的基本功能 |
 | 支持VLC软件 | 验证VLC软件的安装和软件的基本功能 |
@@ -96,7 +96,7 @@ preview(20221014)版本测试活动策略如下：
 
 - [x] [使用D1开发板安装RISC-V openEuler](./d1/README.md)
 
-openEuler 22.03 RISC-V 20220926 QEMU和Unmatched，Visionfive版本通过测试发布，
+openEuler 22.03 RISC-V 20220926 QEMU和Unmatched，Visionfive、D1版本通过或基本通过测试发布，
 
 # 5 测试结论
 
@@ -205,8 +205,6 @@ openEuler 22.03 RISC-V 20220926 版本共发现问题 32个，P1 0 个，P2 1 �
 |             |      |            |                                | 软件启动时间较长           |                            |
 | Libreoffice |      |            | 无法卸载                        |                          |                            |
 |             |      |            | 无法验证安装问题                |                           |                            |
-
-
 
 
 ## 5.2 常见软件和系统功能自动化测试
