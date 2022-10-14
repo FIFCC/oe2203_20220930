@@ -33,7 +33,7 @@ openEuler是一款开源操作系统。当前openEuler内核源于Linux，支持
 | ----------------------------------- | ------------------------------------------------------------ | ------------------------- |
 | HiFive Unmatched | CPU: SiFive Freedom U740 SoC <br />内存：16GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 通过 |
 | VisionFive | CPU: JH7100 <br />内存：8GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 通过 |
-| D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 部分通过 |
+| D1 | CPU: C906 <br />内存：2GB DDR4<br />存储设备：SanDisk Ultra 32GB micro SD | 基本通过，存在部分缺陷 |
 | Qemu 6.2/7.0 | CPU: 8<br />内存：8GB <br />存储设备：文件 | 通过 |
 
 20220926版本测试活动策略如下：
